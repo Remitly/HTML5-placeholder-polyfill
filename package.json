@@ -38,6 +38,6 @@
     "grunt-remove-logging": "~0.1.0",
     "grunt-markdown": "~0.5.0",
     "grunt-contrib-cssmin": "~0.5.0",
-    "grunt-bump": "0.0.13"
+    "grunt-bump": "0.7.3"
   }
 }
