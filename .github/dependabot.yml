@@ -1,0 +1,23 @@
+version: 2
+registries:
+  npm-registry-npm-int-remitly-com:
+    type: npm-registry
+    url: https://npm.int.remitly.com
+    token: "${{secrets.NPM_REGISTRY_NPM_INT_REMITLY_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "15:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: grunt-contrib-uglify
+    versions:
+    - 5.0.0
+  - dependency-name: grunt-contrib-cssmin
+    versions:
+    - 3.0.0
+  registries:
+  - npm-registry-npm-int-remitly-com
